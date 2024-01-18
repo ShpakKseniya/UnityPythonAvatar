@@ -9,9 +9,6 @@ public class CalibrationTimer : MonoBehaviour
     public int timer = 5;
     public KeyCode calibrationKey = KeyCode.C;
     public TextMeshProUGUI text;
-
-    private bool calibrated;
-
     private void Start()
     {
         bool shouldEnable = false;
@@ -25,7 +22,7 @@ public class CalibrationTimer : MonoBehaviour
                 break;
             }
         }
-        text.text = shouldEnable ? "Press " + calibrationKey + " to start calibration timer." : "";
+        text.text = shouldEnable ? "Press " + calibrationKey + "or button to start calibration" : "";
 
         gameObject.SetActive(shouldEnable);
         if (!shouldEnable)
@@ -34,22 +31,19 @@ public class CalibrationTimer : MonoBehaviour
         }
     }
 
+    public void StartCalibration()
+    {
+        StartCoroutine(Timer());
+    }
+
     private void Update()
     {
         if (Input.GetKeyDown(calibrationKey))
         {
-            if(!calibrated)
-            {
-                calibrated = true;
-                StartCoroutine(Timer());
-            }
-            else
-            {
-                StartCoroutine(Notify());
-            }
+            StartCalibration();
         }
     }
-    private IEnumerator Timer()
+    public IEnumerator Timer()
     {
         int t = timer;
         while (t > 0)
@@ -74,12 +68,6 @@ public class CalibrationTimer : MonoBehaviour
             text.text = "Avatar in scene not found...";
         }
         yield return new WaitForSeconds(1.5f);
-        text.text = "";
-    }
-    private IEnumerator Notify()
-    {
-        text.text = "Must restart instance to recalibrate."; // currently a limitation of the way things are set up
-        yield return new WaitForSeconds(3f);
         text.text = "";
     }
 }

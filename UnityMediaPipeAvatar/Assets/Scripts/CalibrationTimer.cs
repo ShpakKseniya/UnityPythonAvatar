@@ -9,6 +9,7 @@ public class CalibrationTimer : MonoBehaviour
     public int timer = 5;
     public KeyCode calibrationKey = KeyCode.C;
     public TextMeshProUGUI text;
+    public bool isCalibration = false;
     private void Start()
     {
         bool shouldEnable = false;
@@ -27,12 +28,13 @@ public class CalibrationTimer : MonoBehaviour
         gameObject.SetActive(shouldEnable);
         if (!shouldEnable)
         {
-            server.SetVisible(false);
+           // server.SetVisible(false);
         }
     }
 
     public void StartCalibration()
     {
+    if(!isCalibration)
         StartCoroutine(Timer());
     }
 
@@ -45,6 +47,7 @@ public class CalibrationTimer : MonoBehaviour
     }
     public IEnumerator Timer()
     {
+    	isCalibration=true;
         int t = timer;
         while (t > 0)
         {
@@ -61,13 +64,14 @@ public class CalibrationTimer : MonoBehaviour
         if (a.Length>0)
         {
             text.text = "Calibration Completed";
-            server.SetVisible(false);
+         //   server.SetVisible(false);
         }
         else
         {
             text.text = "Avatar in scene not found...";
         }
         yield return new WaitForSeconds(1.5f);
+        isCalibration=false;
         text.text = "";
     }
 }

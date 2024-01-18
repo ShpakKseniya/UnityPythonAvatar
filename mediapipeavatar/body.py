@@ -56,7 +56,7 @@ class BodyThread(threading.Thread):
         capture = CaptureThread()
         capture.start()
 
-        with mp_pose.Pose(min_detection_confidence=0.80, min_tracking_confidence=0.5, model_complexity=global_vars.MODEL_COMPLEXITY, static_image_mode=False, enable_segmentation=False) as pose: 
+        with mp_pose.Pose(min_detection_confidence=0.80, min_tracking_confidence=0.5, model_complexity=global_vars.MODEL_COMPLEXITY, static_image_mode=False, enable_segmentation=False) as pose:
             
             while not global_vars.KILL_THREADS and capture.isRunning == False:
                 print("Waiting for camera and capture thread.")

@@ -1,10 +1,8 @@
-// REVIEWS
 using System.Collections;
 using System.IO;
 using System.IO.Pipes;
 using System.Linq;
 using System.Text;
-using System.Threading;
 using UnityEngine;
 
 /* Currently very messy because both the server code and hand-drawn code is all in the same file here.
@@ -14,8 +12,10 @@ using UnityEngine;
 [DefaultExecutionOrder(-1)]
 public class PipeServer : MonoBehaviour
 {
-    public bool useLegacyPipes = false; // True to use NamedPipes for interprocess communication (not supported on Linux)
-    public string host = "127.0.0.1"; // This machines host.
+    public bool
+        useLegacyPipes = false; // True to use NamedPipes for interprocess communication (not supported on Linux)
+
+    public string host = "127.0.0.1"; // This machine's host.
     public int port = 52733; // Must match the Python side.
     public Transform bodyParent;
     public GameObject landmarkPrefab;
@@ -42,12 +42,14 @@ public class PipeServer : MonoBehaviour
 
     public Transform GetLandmark(Landmark mark)
     {
-        return body.instances[(int)mark].transform ;
+        return body.instances[(int)mark].transform;
     }
+
     public Transform GetVirtualNeck()
     {
         return virtualNeck;
     }
+
     public Transform GetVirtualHip()
     {
         return virtualHip;
@@ -55,56 +57,18 @@ public class PipeServer : MonoBehaviour
 
     private void Start()
     {
-        System.Globalization.CultureInfo.DefaultThreadCurrentCulture = System.Globalization.CultureInfo.InvariantCulture;
+        System.Globalization.CultureInfo.DefaultThreadCurrentCulture =
+            System.Globalization.CultureInfo.InvariantCulture;
 
-        body = new Body(bodyParent,landmarkPrefab,linePrefab,landmarkScale,enableHead?headPrefab:null);
+        body = new Body(bodyParent, landmarkPrefab, linePrefab, landmarkScale, enableHead ? headPrefab : null);
         virtualNeck = new GameObject("VirtualNeck").transform;
         virtualHip = new GameObject("VirtualHip").transform;
-
-        Thread t = new Thread(new ThreadStart(Run));
-        t.Start();
-    }
-    private void Update()
-    {
-        UpdateBody(body);
-    }
-
-    private void UpdateBody(Body b)
-    {
-        for (int i = 0; i < LANDMARK_COUNT; ++i)
-        {
-            if (b.positionsBuffer[i].accumulatedValuesCount < samplesForPose)
-                continue;
-            
-            b.localPositionTargets[i] = b.positionsBuffer[i].value / (float)b.positionsBuffer[i].accumulatedValuesCount * multiplier;
-            b.positionsBuffer[i] = new AccumulatedBuffer(Vector3.zero,0);
-        }
-
-        Vector3 offset = Vector3.zero;
-        for (int i = 0; i < LANDMARK_COUNT; ++i)
-        {
-            Vector3 p = b.localPositionTargets[i]-offset;
-            b.instances[i].transform.localPosition=Vector3.MoveTowards(b.instances[i].transform.localPosition, p, Time.deltaTime * maxSpeed);
-        }
-
-        virtualNeck.transform.position = (b.instances[(int)Landmark.RIGHT_SHOULDER].transform.position + b.instances[(int)Landmark.LEFT_SHOULDER].transform.position) / 2f;
-        virtualHip.transform.position = (b.instances[(int)Landmark.RIGHT_HIP].transform.position + b.instances[(int)Landmark.LEFT_HIP].transform.position) / 2f;
-
-        b.UpdateLines();
-    }
-    public void SetVisible(bool visible)
-    {
-        bodyParent.gameObject.SetActive(visible);
-    }
-
-    private void Run()
-    {
-        System.Globalization.CultureInfo.CurrentCulture = System.Globalization.CultureInfo.InvariantCulture;
 
         if (useLegacyPipes)
         {
             // Open the named pipe.
-            serverNP = new NamedPipeServerStream("UnityMediaPipeBody1", PipeDirection.InOut, 99, PipeTransmissionMode.Message);
+            serverNP = new NamedPipeServerStream("UnityMediaPipeBody1", PipeDirection.InOut, 99,
+                PipeTransmissionMode.Message);
 
             print("Waiting for connection...");
             serverNP.WaitForConnection();
@@ -117,50 +81,84 @@ public class PipeServer : MonoBehaviour
             server = new ServerUDP(host, port);
             server.Connect();
             server.StartListeningAsync();
-            print("Listening @"+host+":"+port);
+            print("Listening @" + host + ":" + port);
         }
+    }
 
-        while (true)
+    private void Update()
+    {
+        UpdateBody(body);
+        Run();
+    }
+
+    private void UpdateBody(Body b)
+    {
+        for (int i = 0; i < LANDMARK_COUNT; ++i)
         {
-            try
-            {
-                Body h = body;
-                var len = 0;
-                var str = "";
+            if (b.positionsBuffer[i].accumulatedValuesCount < samplesForPose)
+                continue;
 
-                if (useLegacyPipes)
-                {
-                    len = (int)reader.ReadUInt32();
-                    str = new string(reader.ReadChars(len));
-                }
-                else
-                {
-                    if(server.HasMessage())
-                        str = server.GetMessage();
-                    len = str.Length;
-                }
-
-                string[] lines = str.Split('\n');
-                foreach (string l in lines)
-                {
-                    if (string.IsNullOrWhiteSpace(l))
-                        continue;
-                    string[] s = l.Split('|');
-                    if (s.Length < 4) continue;
-                    int i;
-                    if (!int.TryParse(s[0], out i)) continue;
-                    h.positionsBuffer[i].value += new Vector3(float.Parse(s[1]), float.Parse(s[2]), float.Parse(s[3]));
-                    h.positionsBuffer[i].accumulatedValuesCount += 1;
-                    h.active = true;
-                }
-            }
-            catch (EndOfStreamException)
-            {
-                print("Client Disconnected");
-                break;
-            }
+            b.localPositionTargets[i] = b.positionsBuffer[i].value /
+                (float)b.positionsBuffer[i].accumulatedValuesCount * multiplier;
+            b.positionsBuffer[i] = new AccumulatedBuffer(Vector3.zero, 0);
         }
 
+        Vector3 offset = Vector3.zero;
+        for (int i = 0; i < LANDMARK_COUNT; ++i)
+        {
+            Vector3 p = b.localPositionTargets[i] - offset;
+            b.instances[i].transform.localPosition =
+                Vector3.MoveTowards(b.instances[i].transform.localPosition, p, Time.deltaTime * maxSpeed);
+        }
+
+        virtualNeck.transform.position = (b.instances[(int)Landmark.RIGHT_SHOULDER].transform.position +
+                                          b.instances[(int)Landmark.LEFT_SHOULDER].transform.position) / 2f;
+        virtualHip.transform.position = (b.instances[(int)Landmark.RIGHT_HIP].transform.position +
+                                         b.instances[(int)Landmark.LEFT_HIP].transform.position) / 2f;
+
+        b.UpdateLines();
+    }
+
+    private void Run()
+    {
+        System.Globalization.CultureInfo.CurrentCulture = System.Globalization.CultureInfo.InvariantCulture;
+
+        try
+        {
+            Body h = body;
+            var len = 0;
+            var str = "";
+
+            if (useLegacyPipes)
+            {
+                len = (int)reader.ReadUInt32();
+                str = new string(reader.ReadChars(len));
+            }
+            else
+            {
+                if (server.HasMessage())
+                    str = server.GetMessage();
+                len = str.Length;
+            }
+
+            string[] lines = str.Split('\n');
+            foreach (string l in lines)
+            {
+                if (string.IsNullOrWhiteSpace(l))
+                    continue;
+                string[] s = l.Split('|');
+                if (s.Length < 4) continue;
+                int i;
+                if (!int.TryParse(s[0], out i)) continue;
+                h.positionsBuffer[i].value += new Vector3(float.Parse(s[1]), float.Parse(s[2]), float.Parse(s[3]));
+                h.positionsBuffer[i].accumulatedValuesCount += 1;
+                h.active = true;
+            }
+        }
+        catch (EndOfStreamException)
+        {
+            print("Client Disconnected");
+        }
     }
 
     private void OnDisable()
@@ -184,6 +182,7 @@ public class PipeServer : MonoBehaviour
     {
         public Vector3 value;
         public int accumulatedValuesCount;
+
         public AccumulatedBuffer(Vector3 v, int ac)
         {
             value = v;
@@ -206,11 +205,12 @@ public class PipeServer : MonoBehaviour
             this.parent = parent;
             for (int i = 0; i < instances.Length; ++i)
             {
-                instances[i] = Instantiate(landmarkPrefab);// GameObject.CreatePrimitive(PrimitiveType.Sphere);
+                instances[i] = Instantiate(landmarkPrefab); // GameObject.CreatePrimitive(PrimitiveType.Sphere);
                 instances[i].transform.localScale = Vector3.one * s;
                 instances[i].transform.parent = parent;
                 instances[i].name = ((Landmark)i).ToString();
             }
+
             for (int i = 0; i < lines.Length; ++i)
             {
                 lines[i] = Instantiate(linePrefab).GetComponent<LineRenderer>();
@@ -226,6 +226,7 @@ public class PipeServer : MonoBehaviour
                 head.transform.localScale = headPrefab.transform.localScale;
             }
         }
+
         public void UpdateLines()
         {
             lines[0].positionCount = 4;
@@ -281,7 +282,6 @@ public class PipeServer : MonoBehaviour
             lines[9].SetPosition(0, Position((Landmark)10));
             lines[9].SetPosition(1, Position((Landmark)9));
 
-
             lines[10].positionCount = 5;
             lines[10].SetPosition(0, Position((Landmark)8));
             lines[10].SetPosition(1, Position((Landmark)5));
@@ -290,22 +290,24 @@ public class PipeServer : MonoBehaviour
             lines[10].SetPosition(4, Position((Landmark)7));
         }
 
-        public Vector3 Direction(Landmark from,Landmark to)
+        public Vector3 Direction(Landmark from, Landmark to)
         {
             return (instances[(int)to].transform.position - instances[(int)from].transform.position).normalized;
         }
+
         public float Distance(Landmark from, Landmark to)
         {
             return (instances[(int)from].transform.position - instances[(int)to].transform.position).magnitude;
         }
+
         public Vector3 LocalPosition(Landmark Mark)
         {
             return instances[(int)Mark].transform.localPosition;
         }
+
         public Vector3 Position(Landmark Mark)
         {
             return instances[(int)Mark].transform.position;
         }
-
     }
 }

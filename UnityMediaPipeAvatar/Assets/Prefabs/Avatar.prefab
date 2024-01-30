@@ -57,7 +57,7 @@ MonoBehaviour:
     footTrackerUp: {x: 0, y: 1, z: 0}
     headOffset: {x: 0, y: 0, z: 0}
     handOffset: {x: 0, y: 0, z: 0}
-    footForwardOffset: 0.7
+    footForwardOffset: 0.4
     footInwardOffset: 0
     footHeadingOffset: 0
   headTracker: {fileID: 0}
@@ -76,15 +76,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 51f7df7bcdd05f14291d8ed6b6d4d032, type: 3}
       propertyPath: m_LocalScale.x
-      value: 3.5
+      value: 3.4
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 51f7df7bcdd05f14291d8ed6b6d4d032, type: 3}
       propertyPath: m_LocalScale.y
-      value: 3.5
+      value: 3.4
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 51f7df7bcdd05f14291d8ed6b6d4d032, type: 3}
       propertyPath: m_LocalScale.z
-      value: 3.5
+      value: 3.4
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 51f7df7bcdd05f14291d8ed6b6d4d032, type: 3}
       propertyPath: m_LocalPosition.x
@@ -92,7 +92,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 51f7df7bcdd05f14291d8ed6b6d4d032, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.75
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 51f7df7bcdd05f14291d8ed6b6d4d032, type: 3}
       propertyPath: m_LocalPosition.z

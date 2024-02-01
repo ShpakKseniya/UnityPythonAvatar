@@ -1,0 +1,1007 @@
+fileFormatVersion: 2
+guid: 51f7df7bcdd05f14291d8ed6b6d4d032
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable:
+  - first:
+      74: -1498010087492872569
+    second: CINEMA_4D_Main
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 1
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 0
+  humanDescription:
+    serializedVersion: 3
+    human:
+    - boneName: rp_mason_animated_005_walking_hip
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: rp_mason_animated_005_walking_upperleg_l
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: rp_mason_animated_005_walking_upperleg_r
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: rp_mason_animated_005_walking_lowerleg_l
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: rp_mason_animated_005_walking_lowerleg_r
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: rp_mason_animated_005_walking_foot_l
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: rp_mason_animated_005_walking_foot_r
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: rp_mason_animated_005_walking_spine_01
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: rp_mason_animated_005_walking_spine_02
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: rp_mason_animated_005_walking_neck
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: rp_mason_animated_005_walking_head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: rp_mason_animated_005_walking_shoulder_l
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: rp_mason_animated_005_walking_shoulder_r
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: rp_mason_animated_005_walking_upperarm_l
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: rp_mason_animated_005_walking_upperarm_r
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: rp_mason_animated_005_walking_lowerarm_l
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: rp_mason_animated_005_walking_lowerarm_r
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: rp_mason_animated_005_walking_hand_l
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: rp_mason_animated_005_walking_hand_r
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: rp_mason_animated_005_walking_ball_l
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: rp_mason_animated_005_walking_ball_r
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: rp_mason_animated_005_walking_eye_l
+      humanName: LeftEye
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: rp_mason_animated_005_walking_eye_r
+      humanName: RightEye
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: rp_mason_animated_005_walking_jaw
+      humanName: Jaw
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: rp_mason_animated_005_walking_thumb_01_l
+      humanName: Left Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: rp_mason_animated_005_walking_thumb_02_l
+      humanName: Left Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: rp_mason_animated_005_walking_thumb_03_l
+      humanName: Left Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: rp_mason_animated_005_walking_index_01_l
+      humanName: Left Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: rp_mason_animated_005_walking_index_02_l
+      humanName: Left Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: rp_mason_animated_005_walking_index_03_l
+      humanName: Left Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: rp_mason_animated_005_walking_middle_01_l
+      humanName: Left Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: rp_mason_animated_005_walking_middle_02_l
+      humanName: Left Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: rp_mason_animated_005_walking_middle_03_l
+      humanName: Left Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: rp_mason_animated_005_walking_ring_01_l
+      humanName: Left Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: rp_mason_animated_005_walking_ring_02_l
+      humanName: Left Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: rp_mason_animated_005_walking_ring_03_l
+      humanName: Left Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: rp_mason_animated_005_walking_pinky_01_l
+      humanName: Left Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: rp_mason_animated_005_walking_pinky_02_l
+      humanName: Left Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: rp_mason_animated_005_walking_pinky_03_l
+      humanName: Left Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: rp_mason_animated_005_walking_thumb_01_r
+      humanName: Right Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: rp_mason_animated_005_walking_thumb_02_r
+      humanName: Right Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: rp_mason_animated_005_walking_thumb_03_r
+      humanName: Right Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: rp_mason_animated_005_walking_index_01_r
+      humanName: Right Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: rp_mason_animated_005_walking_index_02_r
+      humanName: Right Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: rp_mason_animated_005_walking_index_03_r
+      humanName: Right Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: rp_mason_animated_005_walking_middle_01_r
+      humanName: Right Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: rp_mason_animated_005_walking_middle_02_r
+      humanName: Right Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: rp_mason_animated_005_walking_middle_03_r
+      humanName: Right Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: rp_mason_animated_005_walking_ring_01_r
+      humanName: Right Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: rp_mason_animated_005_walking_ring_02_r
+      humanName: Right Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: rp_mason_animated_005_walking_ring_03_r
+      humanName: Right Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: rp_mason_animated_005_walking_pinky_01_r
+      humanName: Right Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: rp_mason_animated_005_walking_pinky_02_r
+      humanName: Right Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: rp_mason_animated_005_walking_pinky_03_r
+      humanName: Right Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: rp_mason_animated_005_walking_spine_03
+      humanName: UpperChest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: manson_T 2(Clone)
+      parentName: 
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: rp_mason_animated_005_walking_CTRL
+      parentName: manson_T 2(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: rp_mason_animated_005_walking_root
+      parentName: rp_mason_animated_005_walking_CTRL
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: rp_mason_animated_005_walking_hip
+      parentName: rp_mason_animated_005_walking_root
+      position: {x: -0, y: 0.93, z: 0}
+      rotation: {x: -0.5, y: 0.5, z: -0.5, w: 0.5}
+      scale: {x: 1, y: 1, z: 1}
+    - name: rp_mason_animated_005_walking_spine_01
+      parentName: rp_mason_animated_005_walking_hip
+      position: {x: -0.1597649, y: -1.8651518e-17, z: -3.547494e-17}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: rp_mason_animated_005_walking_spine_02
+      parentName: rp_mason_animated_005_walking_spine_01
+      position: {x: -0.1597649, y: -1.8651518e-17, z: -3.547494e-17}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: rp_mason_animated_005_walking_spine_03
+      parentName: rp_mason_animated_005_walking_spine_02
+      position: {x: -0.1597649, y: -1.8651518e-17, z: -3.547494e-17}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: rp_mason_animated_005_walking_neck
+      parentName: rp_mason_animated_005_walking_spine_03
+      position: {x: -0.1597649, y: -1.8651518e-17, z: -3.547494e-17}
+      rotation: {x: 2.2136433e-16, y: 2.2156891e-17, z: 0.078216374, w: 0.99693644}
+      scale: {x: 1, y: 1, z: 1}
+    - name: rp_mason_animated_005_walking_head
+      parentName: rp_mason_animated_005_walking_neck
+      position: {x: -0.09241762, y: 7.1054265e-17, z: -7.11405e-18}
+      rotation: {x: -1.7794554e-16, y: 5.31254e-16, z: -0.078216374, w: 0.99693644}
+      scale: {x: 1, y: 1, z: 1}
+    - name: rp_mason_animated_005_walking_head_end
+      parentName: rp_mason_animated_005_walking_head
+      position: {x: -0.17367108, y: -3.1086238e-17, z: -5.72294e-17}
+      rotation: {x: 0, y: 1.5378638e-32, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: rp_mason_animated_005_walking_jaw
+      parentName: rp_mason_animated_005_walking_head
+      position: {x: -0.010757566, y: -0.030441245, z: -1.0155248e-17}
+      rotation: {x: 1.3184588e-16, y: -3.64704e-16, z: 0.9256897, w: 0.37828374}
+      scale: {x: 1, y: 1, z: 1}
+    - name: rp_mason_animated_005_walking_jaw_end
+      parentName: rp_mason_animated_005_walking_jaw
+      position: {x: -0.06798777, y: 1.4210849e-16, z: 3.980763e-17}
+      rotation: {x: 0, y: -4.9303807e-32, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: rp_mason_animated_005_walking_eye_l
+      parentName: rp_mason_animated_005_walking_head
+      position: {x: -0.0786878, y: -0.075302616, z: -0.031158928}
+      rotation: {x: 3.69284e-12, y: 0.0000000052752513, z: 0.70710534, w: 0.7071082}
+      scale: {x: 1, y: 1, z: 1}
+    - name: rp_mason_animated_005_walking_eye_end_l
+      parentName: rp_mason_animated_005_walking_eye_l
+      position: {x: -0.01900197, y: 0, z: 1.416621e-10}
+      rotation: {x: 1.6048902e-25, y: 8.271806e-25, z: -4.2351647e-22, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: rp_mason_animated_005_walking_eye_r
+      parentName: rp_mason_animated_005_walking_head
+      position: {x: -0.07903732, y: -0.07421808, z: 0.030273696}
+      rotation: {x: 0.00000037571, y: -0.00000035057684, z: 0.7071068, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: rp_mason_animated_005_walking_eye_end_r
+      parentName: rp_mason_animated_005_walking_eye_r
+      position: {x: -0.020692078, y: 0.00000002124061, z: 0.000000021988809}
+      rotation: {x: 1.7810109e-24, y: 0, z: 3.1554436e-30, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: rp_mason_animated_005_walking_mouth_l
+      parentName: rp_mason_animated_005_walking_head
+      position: {x: -0.006215304, y: -0.09488509, z: -0.025881018}
+      rotation: {x: -0.30947337, y: 0.24917178, z: 0.6633609, w: 0.63410723}
+      scale: {x: 1, y: 1, z: 1}
+    - name: rp_mason_animated_005_walking_mouth_r
+      parentName: rp_mason_animated_005_walking_head
+      position: {x: -0.0070153014, y: -0.094285086, z: 0.028180856}
+      rotation: {x: 0.25023627, y: -0.27219048, z: 0.6878977, w: 0.6245726}
+      scale: {x: 1, y: 1, z: 1}
+    - name: rp_mason_animated_005_walking_eyelid_r
+      parentName: rp_mason_animated_005_walking_head
+      position: {x: -0.07903732, y: -0.07421808, z: 0.030273696}
+      rotation: {x: -0.030296579, y: -0.016281346, z: 0.64258635, w: 0.76544094}
+      scale: {x: 1, y: 1, z: 1}
+    - name: rp_mason_animated_005_walking_eyelid_end_r
+      parentName: rp_mason_animated_005_walking_eyelid_r
+      position: {x: -0.021529688, y: 2.842171e-16, z: -1.776357e-17}
+      rotation: {x: 0.007250992, y: 0.0092869, z: -0.6153695, w: 0.7881507}
+      scale: {x: 1, y: 1, z: 1}
+    - name: rp_mason_animated_005_walking_eyelid_l
+      parentName: rp_mason_animated_005_walking_head
+      position: {x: -0.0786878, y: -0.075302616, z: -0.031158928}
+      rotation: {x: -0.030296579, y: -0.016281346, z: 0.64258635, w: 0.76544094}
+      scale: {x: 1, y: 1, z: 1}
+    - name: rp_mason_animated_005_walking_eyelid_end_l
+      parentName: rp_mason_animated_005_walking_eyelid_l
+      position: {x: -0.021529688, y: 2.842171e-16, z: -8.881784e-18}
+      rotation: {x: 5.6378513e-18, y: -7.8240904e-35, z: -1.3877788e-17, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: rp_mason_animated_005_walking_eyebrow_l
+      parentName: rp_mason_animated_005_walking_head
+      position: {x: -0.089812435, y: -0.103496425, z: -0.02544577}
+      rotation: {x: -0.31772715, y: 0.6434345, z: 0.644499, w: 0.2639367}
+      scale: {x: 1, y: 1, z: 1}
+    - name: rp_mason_animated_005_walking_shoulder_l
+      parentName: rp_mason_animated_005_walking_spine_03
+      position: {x: -0.09173601, y: 0.004100923, z: -0.04048804}
+      rotation: {x: 1.7865813e-16, y: -0.7071068, z: 1.7865813e-16, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: rp_mason_animated_005_walking_upperarm_l
+      parentName: rp_mason_animated_005_walking_shoulder_l
+      position: {x: -0.128246, y: 5.551115e-19, z: 0}
+      rotation: {x: 0, y: 9.180894e-33, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: rp_mason_animated_005_walking_lowerarm_l
+      parentName: rp_mason_animated_005_walking_upperarm_l
+      position: {x: -0.3425518, y: -5.551115e-19, z: 0}
+      rotation: {x: 0, y: 9.180894e-33, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: rp_mason_animated_005_walking_hand_l
+      parentName: rp_mason_animated_005_walking_lowerarm_l
+      position: {x: -0.2216765, y: 0, z: -2.842171e-16}
+      rotation: {x: -0.7071068, y: 2.1339906e-33, z: 1.08497556e-32, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: rp_mason_animated_005_walking_thumb_01_l
+      parentName: rp_mason_animated_005_walking_hand_l
+      position: {x: -0.03923196, y: 0.0168304, z: -0.033921648}
+      rotation: {x: 0.6407429, y: -0.25555682, z: 0.20061803, w: 0.69562316}
+      scale: {x: 1, y: 1, z: 1}
+    - name: rp_mason_animated_005_walking_thumb_02_l
+      parentName: rp_mason_animated_005_walking_thumb_01_l
+      position: {x: -0.02878753, y: -5.3290707e-17, z: 2.842171e-16}
+      rotation: {x: 0.012414811, y: 0.022079093, z: -0.027974915, w: 0.99928766}
+      scale: {x: 1, y: 1, z: 1}
+    - name: rp_mason_animated_005_walking_thumb_03_l
+      parentName: rp_mason_animated_005_walking_thumb_02_l
+      position: {x: -0.03117248, y: 4.440892e-18, z: -2.842171e-16}
+      rotation: {x: 0, y: -2.1597044e-30, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: rp_mason_animated_005_walking_thumb_end_l
+      parentName: rp_mason_animated_005_walking_thumb_03_l
+      position: {x: -0.02402605, y: 0, z: 2.842171e-16}
+      rotation: {x: -0, y: -6.5339745e-31, z: -7.888609e-31, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: rp_mason_animated_005_walking_index_01_l
+      parentName: rp_mason_animated_005_walking_hand_l
+      position: {x: -0.097424, y: 0.005452991, z: -0.01874075}
+      rotation: {x: 0, y: 0, z: 7.306193e-33, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: rp_mason_animated_005_walking_index_02_l
+      parentName: rp_mason_animated_005_walking_index_01_l
+      position: {x: -0.0410955, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 7.306193e-33, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: rp_mason_animated_005_walking_index_03_l
+      parentName: rp_mason_animated_005_walking_index_02_l
+      position: {x: -0.02327662, y: -2.842171e-16, z: 2.220446e-18}
+      rotation: {x: 0, y: 0, z: 7.306193e-33, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: rp_mason_animated_005_walking_index_end_l
+      parentName: rp_mason_animated_005_walking_index_03_l
+      position: {x: -0.01997502, y: 0, z: -4.440892e-18}
+      rotation: {x: 0, y: 0, z: 7.306193e-33, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: rp_mason_animated_005_walking_middle_01_l
+      parentName: rp_mason_animated_005_walking_hand_l
+      position: {x: -0.101133496, y: -0.00044699007, z: -0.001080178}
+      rotation: {x: 0, y: 0, z: 7.306193e-33, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: rp_mason_animated_005_walking_middle_02_l
+      parentName: rp_mason_animated_005_walking_middle_01_l
+      position: {x: -0.04424477, y: 0, z: 1.110223e-18}
+      rotation: {x: 0, y: 0, z: 7.306193e-33, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: rp_mason_animated_005_walking_middle_03_l
+      parentName: rp_mason_animated_005_walking_middle_02_l
+      position: {x: -0.02323918, y: -2.842171e-16, z: -5.551115e-19}
+      rotation: {x: 0, y: 0, z: 7.306193e-33, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: rp_mason_animated_005_walking_middle_end_l
+      parentName: rp_mason_animated_005_walking_middle_03_l
+      position: {x: -0.02224345, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 7.306193e-33, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: rp_mason_animated_005_walking_ring_01_l
+      parentName: rp_mason_animated_005_walking_hand_l
+      position: {x: -0.095957704, y: 0.001652067, z: 0.01804798}
+      rotation: {x: 0, y: 0, z: 7.306193e-33, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: rp_mason_animated_005_walking_ring_02_l
+      parentName: rp_mason_animated_005_walking_ring_01_l
+      position: {x: -0.041752838, y: 0, z: 4.440892e-18}
+      rotation: {x: 0, y: 0, z: 7.306193e-33, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: rp_mason_animated_005_walking_ring_03_l
+      parentName: rp_mason_animated_005_walking_ring_02_l
+      position: {x: -0.02230952, y: -2.842171e-16, z: 0}
+      rotation: {x: 0, y: 0, z: 7.306193e-33, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: rp_mason_animated_005_walking_ring_end_l
+      parentName: rp_mason_animated_005_walking_ring_03_l
+      position: {x: -0.020029899, y: 0, z: 4.440892e-18}
+      rotation: {x: 0, y: 0, z: 7.306193e-33, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: rp_mason_animated_005_walking_pinky_01_l
+      parentName: rp_mason_animated_005_walking_hand_l
+      position: {x: -0.09202722, y: 0.0043866728, z: 0.03543185}
+      rotation: {x: 0, y: 0, z: 7.306193e-33, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: rp_mason_animated_005_walking_pinky_02_l
+      parentName: rp_mason_animated_005_walking_pinky_01_l
+      position: {x: -0.03243382, y: 0, z: -4.440892e-18}
+      rotation: {x: 0, y: 0, z: 7.306193e-33, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: rp_mason_animated_005_walking_pinky_03_l
+      parentName: rp_mason_animated_005_walking_pinky_02_l
+      position: {x: -0.01761048, y: 0, z: 4.440892e-18}
+      rotation: {x: 0, y: 0, z: 7.306193e-33, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: rp_mason_animated_005_walking_pinky_end_l
+      parentName: rp_mason_animated_005_walking_pinky_03_l
+      position: {x: -0.01605966, y: -2.842171e-16, z: 0}
+      rotation: {x: 0, y: 0, z: 7.306193e-33, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: rp_mason_animated_005_walking_lowerarm_twist_l
+      parentName: rp_mason_animated_005_walking_lowerarm_l
+      position: {x: -0.110838205, y: 5.551115e-19, z: 0}
+      rotation: {x: 0, y: 9.180894e-33, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: rp_mason_animated_005_walking_upperarm_twist_l
+      parentName: rp_mason_animated_005_walking_upperarm_l
+      position: {x: -0.1852345, y: -5.551115e-19, z: -0.00017617359}
+      rotation: {x: 0, y: 9.180894e-33, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: rp_mason_animated_005_walking_shoulder_r
+      parentName: rp_mason_animated_005_walking_spine_03
+      position: {x: -0.0919744, y: 0.003190809, z: 0.04346272}
+      rotation: {x: 0.7071068, y: -4.3297806e-17, z: 0.7071068, w: 4.3297806e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: rp_mason_animated_005_walking_upperarm_r
+      parentName: rp_mason_animated_005_walking_shoulder_r
+      position: {x: 0.13741319, y: -5.551115e-19, z: 0}
+      rotation: {x: 0, y: -5.683344e-32, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: rp_mason_animated_005_walking_lowerarm_r
+      parentName: rp_mason_animated_005_walking_upperarm_r
+      position: {x: 0.29437828, y: 0, z: 0}
+      rotation: {x: 0, y: -6.9159393e-32, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: rp_mason_animated_005_walking_hand_r
+      parentName: rp_mason_animated_005_walking_lowerarm_r
+      position: {x: 0.24847429, y: 1.110223e-18, z: 0}
+      rotation: {x: -0.7071068, y: 3.3915065e-33, z: 3.3915065e-33, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: rp_mason_animated_005_walking_thumb_01_r
+      parentName: rp_mason_animated_005_walking_hand_r
+      position: {x: 0.04615145, y: -0.01530511, z: 0.029828979}
+      rotation: {x: 0.64116675, y: -0.24792859, z: 0.20395823, w: 0.6970206}
+      scale: {x: 1, y: 1, z: 1}
+    - name: rp_mason_animated_005_walking_thumb_02_r
+      parentName: rp_mason_animated_005_walking_thumb_01_r
+      position: {x: 0.0249112, y: 7.1054265e-17, z: -2.842171e-16}
+      rotation: {x: 0.012414929, y: 0.022076378, z: -0.027976029, w: 0.9992877}
+      scale: {x: 1, y: 1, z: 1}
+    - name: rp_mason_animated_005_walking_thumb_03_r
+      parentName: rp_mason_animated_005_walking_thumb_02_r
+      position: {x: 0.031877328, y: 0, z: 0}
+      rotation: {x: 1.9721523e-31, y: -1.192683e-30, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: rp_mason_animated_005_walking_thumb_end_r
+      parentName: rp_mason_animated_005_walking_thumb_03_r
+      position: {x: 0.024862649, y: 4.440892e-18, z: 0}
+      rotation: {x: 0, y: 1.9310957e-30, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: rp_mason_animated_005_walking_index_01_r
+      parentName: rp_mason_animated_005_walking_hand_r
+      position: {x: 0.09788883, y: -0.0005137516, z: 0.02060942}
+      rotation: {x: 0, y: 0, z: 1.5898422e-33, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: rp_mason_animated_005_walking_index_02_r
+      parentName: rp_mason_animated_005_walking_index_01_r
+      position: {x: 0.04076583, y: 0, z: 2.220446e-18}
+      rotation: {x: 0, y: 0, z: 1.5898422e-33, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: rp_mason_animated_005_walking_index_03_r
+      parentName: rp_mason_animated_005_walking_index_02_r
+      position: {x: 0.022349218, y: 0, z: -2.220446e-18}
+      rotation: {x: 0, y: 0, z: 1.5898422e-33, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: rp_mason_animated_005_walking_index_end_r
+      parentName: rp_mason_animated_005_walking_index_03_r
+      position: {x: 0.02033737, y: 0, z: 2.220446e-18}
+      rotation: {x: 0, y: 0, z: 1.589842e-33, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: rp_mason_animated_005_walking_middle_01_r
+      parentName: rp_mason_animated_005_walking_hand_r
+      position: {x: 0.1003913, y: 0.003213382, z: 0.000121637495}
+      rotation: {x: 0, y: 0, z: 1.5898422e-33, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: rp_mason_animated_005_walking_middle_02_r
+      parentName: rp_mason_animated_005_walking_middle_01_r
+      position: {x: 0.0443157, y: 0, z: 5.551115e-19}
+      rotation: {x: 0, y: 0, z: 1.5898422e-33, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: rp_mason_animated_005_walking_middle_03_r
+      parentName: rp_mason_animated_005_walking_middle_02_r
+      position: {x: 0.02383681, y: 0, z: -5.551115e-19}
+      rotation: {x: 0, y: 0, z: 1.5898422e-33, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: rp_mason_animated_005_walking_middle_end_r
+      parentName: rp_mason_animated_005_walking_middle_03_r
+      position: {x: 0.02133749, y: 0, z: 5.551115e-19}
+      rotation: {x: 0, y: 0, z: 1.589842e-33, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: rp_mason_animated_005_walking_ring_01_r
+      parentName: rp_mason_animated_005_walking_hand_r
+      position: {x: 0.09569011, y: 0.0010939799, z: -0.01834576}
+      rotation: {x: 0, y: 0, z: 1.5898422e-33, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: rp_mason_animated_005_walking_ring_02_r
+      parentName: rp_mason_animated_005_walking_ring_01_r
+      position: {x: 0.04125174, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 1.5898422e-33, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: rp_mason_animated_005_walking_ring_03_r
+      parentName: rp_mason_animated_005_walking_ring_02_r
+      position: {x: 0.02208645, y: 2.842171e-16, z: 0}
+      rotation: {x: 0, y: 0, z: 1.5898422e-33, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: rp_mason_animated_005_walking_ring_end_r
+      parentName: rp_mason_animated_005_walking_ring_03_r
+      position: {x: 0.01951773, y: -2.842171e-16, z: 4.440892e-18}
+      rotation: {x: 0, y: 0, z: 1.589842e-33, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: rp_mason_animated_005_walking_pinky_01_r
+      parentName: rp_mason_animated_005_walking_hand_r
+      position: {x: 0.091251, y: -0.001108072, z: -0.03540538}
+      rotation: {x: 0, y: 0, z: 1.5898422e-33, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: rp_mason_animated_005_walking_pinky_02_r
+      parentName: rp_mason_animated_005_walking_pinky_01_r
+      position: {x: 0.0325651, y: 0, z: 4.440892e-18}
+      rotation: {x: 0, y: 0, z: 1.5898422e-33, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: rp_mason_animated_005_walking_pinky_03_r
+      parentName: rp_mason_animated_005_walking_pinky_02_r
+      position: {x: 0.01683664, y: 0, z: -4.440892e-18}
+      rotation: {x: 0, y: 0, z: 1.5898422e-33, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: rp_mason_animated_005_walking_pinky_end_r
+      parentName: rp_mason_animated_005_walking_pinky_03_r
+      position: {x: 0.015969729, y: 2.842171e-16, z: -4.440892e-18}
+      rotation: {x: 0, y: 0, z: 1.5898422e-33, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: rp_mason_animated_005_walking_lowerarm_twist_r
+      parentName: rp_mason_animated_005_walking_lowerarm_r
+      position: {x: 0.1242372, y: 1.110223e-18, z: 0}
+      rotation: {x: 0, y: -5.0670466e-32, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: rp_mason_animated_005_walking_upperarm_twist_r
+      parentName: rp_mason_animated_005_walking_upperarm_r
+      position: {x: 0.1471892, y: 5.551115e-19, z: 0}
+      rotation: {x: 0, y: -5.0670466e-32, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: rp_mason_animated_005_walking_upperleg_l
+      parentName: rp_mason_animated_005_walking_hip
+      position: {x: -0, y: 1.883841e-17, z: -0.08484067}
+      rotation: {x: -1.1960759e-12, y: 0.0012448528, z: 0.0027927149, w: 0.99999535}
+      scale: {x: 1, y: 1, z: 1}
+    - name: rp_mason_animated_005_walking_lowerleg_l
+      parentName: rp_mason_animated_005_walking_upperleg_l
+      position: {x: 0.3625991, y: -2.1094239e-17, z: 1.953993e-16}
+      rotation: {x: 0.00007902326, y: 0.0016321655, z: 0.040654257, w: 0.9991719}
+      scale: {x: 1, y: 1, z: 1}
+    - name: rp_mason_animated_005_walking_foot_l
+      parentName: rp_mason_animated_005_walking_lowerleg_l
+      position: {x: 0.45333517, y: 1.598721e-16, z: 1.776357e-16}
+      rotation: {x: -0.00012507327, y: -0.0028761995, z: -0.04344437, w: 0.99905175}
+      scale: {x: 1, y: 1, z: 1}
+    - name: rp_mason_animated_005_walking_ball_l
+      parentName: rp_mason_animated_005_walking_foot_l
+      position: {x: 0.09815996, y: -0.1662523, z: -0.000002484097}
+      rotation: {x: -0.003652062, y: 0.0036533305, z: 0.7072202, w: 0.70697445}
+      scale: {x: 1, y: 1, z: 1}
+    - name: rp_mason_animated_005_walking_foot_end_l
+      parentName: rp_mason_animated_005_walking_ball_l
+      position: {x: -0.07301046, y: -4.8849806e-17, z: 3.552714e-17}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: rp_mason_animated_005_walking_lowerleg_twist_l
+      parentName: rp_mason_animated_005_walking_lowerleg_l
+      position: {x: 0.22666758, y: 7.1054265e-17, z: 5.3290707e-17}
+      rotation: {x: 4.5574656e-20, y: -5.6062533e-19, z: 6.938894e-18, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: rp_mason_animated_005_walking_upperleg_twist_l
+      parentName: rp_mason_animated_005_walking_upperleg_l
+      position: {x: 0.18129958, y: -9.992007e-18, z: 8.8817837e-17}
+      rotation: {x: -4.2351645e-22, y: 1.1153701e-19, z: 1.3010426e-18, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: rp_mason_animated_005_walking_upperleg_r
+      parentName: rp_mason_animated_005_walking_hip
+      position: {x: 0.00000022768158, y: -0.0000000012717101, z: 0.084840715}
+      rotation: {x: 0.00015167413, y: -0.0000004236005, z: 0.9999961, w: -0.0027925873}
+      scale: {x: 1, y: 1, z: 1}
+    - name: rp_mason_animated_005_walking_lowerleg_r
+      parentName: rp_mason_animated_005_walking_upperleg_r
+      position: {x: -0.3625991, y: 7.771561e-17, z: 5.3290707e-17}
+      rotation: {x: -0.00015005458, y: -0.0033450269, z: 0.03923325, w: 0.9992245}
+      scale: {x: 1, y: 1, z: 1}
+    - name: rp_mason_animated_005_walking_foot_r
+      parentName: rp_mason_animated_005_walking_lowerleg_r
+      position: {x: -0.45288527, y: 8.881784e-18, z: 0}
+      rotation: {x: 0.00014708628, y: 0.003496973, z: -0.042023614, w: 0.9991105}
+      scale: {x: 1, y: 1, z: 1}
+    - name: rp_mason_animated_005_walking_ball_r
+      parentName: rp_mason_animated_005_walking_foot_r
+      position: {x: -0.09975241, y: 0.1664877, z: 0.0012125979}
+      rotation: {x: 0.0034637288, y: -0.0034866855, z: 0.7094298, w: 0.70475906}
+      scale: {x: 1, y: 1, z: 1}
+    - name: rp_mason_animated_005_walking_foot_end_r
+      parentName: rp_mason_animated_005_walking_ball_r
+      position: {x: 0.065361306, y: 2.220446e-18, z: 5.3290707e-17}
+      rotation: {x: 0, y: -8.6736174e-19, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: rp_mason_animated_005_walking_lowerleg_twist_r
+      parentName: rp_mason_animated_005_walking_lowerleg_r
+      position: {x: -0.2264427, y: 8.881784e-18, z: -3.552714e-17}
+      rotation: {x: 2.742776e-20, y: -4.944432e-21, z: -6.938894e-18, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: rp_mason_animated_005_walking_upperleg_twist_r
+      parentName: rp_mason_animated_005_walking_upperleg_r
+      position: {x: -0.18129958, y: 3.885781e-17, z: 1.776357e-17}
+      rotation: {x: -5.4039105e-23, y: -8.370134e-21, z: -4.53e-43, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: rp_mason_animated_005_walking_geoGRP
+      parentName: manson_T 2(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: rp_mason_animated_005_walking_geo
+      parentName: rp_mason_animated_005_walking_geoGRP
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 3
+  humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 0
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
